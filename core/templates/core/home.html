@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class='mt-4'>
+        <div class='text-center'>
+            <img src="{% static 'core/images/pic.jpg' %}" alt="ProfilePic" class='img-thumbnail' width='250px' height='13   0px'>
+        </div>
+        <div class='mt-4 text-white mx-5 text-justify'>
+            <h1 class='font-weight-bold st-font'>Hello,</h1>
+            <div class='px-4' style='line-height:2rem;'>
+                <p style='text-indent:100px;'>I am <b class='text-warning'>Waqar Khan</b>  , I am fresher recently completed <b class='text-warning'>Bsc(Computer Science)</b>, I wanna python full-stack devloper,good knowledge in this field </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quasi illum sint quisquam ipsa nostrum, dolorum repellat! Quaerat tenetur voluptatem illum totam, fugit minus fugiat. Repellendus architecto unde et repudiandae!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quasi illum sint quisquam ipsa nostrum, dolorum repellat! Quaerat tenetur voluptatem illum totam, fugit minus fugiat. Repellendus architecto unde et repudiandae!</p>
+            </div>
+        </div>
+        <div class='text-center'>
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">contact</a>
+        <div>
+    </div>
+
+{% endblock content %}
